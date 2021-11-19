@@ -1,11 +1,13 @@
----
 plugin: aws_ec2
 
 regions:
-  - us-east-1
+  - us-east-2
 
-hostnames:
-  - ip-address
+aws_access_key_id: AKIAXJ5ULJN3GFJ7S4YY
+aws_secret_access_key: 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
+
+#hostnames:
+#  - ip-address
 
 keyed_groups:
   - key: tags.inventory_group

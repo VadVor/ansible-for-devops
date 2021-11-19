@@ -2,11 +2,15 @@
 - hosts: localhost
   connection: local
   gather_facts: false
+  environment:
+    aws_access_key_id: AKIAXJ5ULJN3GFJ7S4YY
+    aws_secret_access_key: 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
 
   vars:
     aws_profile: default
     aws_region: us-east-1 # North Virginia
     aws_ec2_ami: ami-06cf02a98a61f9f5e # CentOS 7
+    
 
     instances:
       - name: a4d.lamp.varnish
